@@ -29,7 +29,7 @@ function displayResults(weatherData) {
 
   const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
   const desc = weatherData.weather[0].description;
-  currentHumi.innerHTML = weatherData.main.humidity.toFixed(0);
+  currentHumi.innerHTML = `<strong>${weatherData.main.humidity.toFixed(0)}</strong>`; 
 
   weatherIcon.setAttribute("src", iconsrc);
   weatherIcon.setAttribute("alt", desc);
