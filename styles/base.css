@@ -76,7 +76,7 @@ main {
 #image1 {
   grid-area: 1/1/4/6;
   background: url(/bountifulFoods/images/promo/strawberryPromo.jpg);
-  
+
   background-position: center;
   background-size: cover;
   background-color: var(--accent1-color);
@@ -92,6 +92,12 @@ main {
   grid-area: 1/5/5/9;
   margin: 40px 0px 60px 50px;
   padding: 25px;
+}
+
+#image2 {
+  background-image: url(/bountifulFoods/images/promo/grapes.png);
+  grid-area: 5/1/8/4;
+  background-color: aqua;
 }
 
 #drinks {
@@ -112,6 +118,7 @@ main {
   margin-top: 10px;
   padding: 10px;
   text-align: center;
+  border: none;
 }
 
 #sec3 h2 {
@@ -122,11 +129,10 @@ main {
   margin-top: 3px;
 }
 
-#icon-wrapper{
+#icon-wrapper {
   display: flex;
-  
 }
-#icon-wrapper img{
+#icon-wrapper img {
   max-height: 50px;
   max-width: 50px;
 }
