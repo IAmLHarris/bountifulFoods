@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya&family=Cabin&display=swap");
+
+:root {
+  --primary-color: #ad8068;
+  --secondary-color: #ddd8dc;
+  --accent1-color: #d64550;
+  --accent2-color: #3f826d;
+  --accent3-color: #a37860;
+}
+
+header {
+  background-color: var(--secondary-color);
+  padding: 10px;
+  margin: 0px 95px 10px 95px;
+  font-family: Alegreya, serif;
+  border-radius: 5px;
+}
+
+header a {
+  text-decoration: none;
+}
+
+header h1 {
+  color: var(--accent1-color);
+}
+
+.headerWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bountifulLogo {
+  display: flex;
+  align-items: center;
+}
+
+.socialMedia img {
+  padding: 3px;
+  max-width: 50px;
+}
+.socialMedia a {
+  text-decoration: none;
+}
+
+header img {
+  max-width: 100px;
+}
+
+main {
+  background-image: url(/bountifulFoods/images/basket2.png);
+  background-size: contain;
+  background-position: center;
+  max-width: 1124px;
+  margin: 0 auto;
+  padding: 1em;
+  background-color: var(--secondary-color);
+  border: 15px solid var(--accent3-color);
+  border-radius: 15px;
+}
+
+.mainSelections {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(6, 100px);
+}
+
+.mainSelections section {
+  background-color: var(--accent2-color);
+  padding: 5px;
+  /* margin: 5px; */
+  border: 5px solid var(--secondary-color);
+  border-radius: 5px;
+}
+
+#image1 {
+  grid-area: 1/1/4/6;
+  /* background: url(/bountifulFoods/images/promo/strawberries.jpg); */
+  background: url(/bountifulFoods/images/bountifullogo.png);
+  background-position: center;
+  background-size: cover;
+  background-color: var(--accent1-color);
+  margin-bottom: 10px;
+}
+
+#sec1 {
+  grid-area: 6/1/8/3;
+  background-color: var(--accent1-color);
+}
+
+#sec2 {
+  grid-area: 1/5/5/9;
+  margin: 40px 0px 60px 50px;
+  padding: 25px;
+}
+
+#drinks {
+  display: flex;
+
+  justify-content: center;
+}
+
+#drinks img {
+  margin: 4px;
+  border: 5px solid var(--primary-color);
+  border-radius: 2px;
+  max-width: 90px;
+}
+
+#sec3 {
+  grid-area: 4/1/6/3;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+#sec4 {
+  grid-area: 5/6/8/9;
+  margin: 5px 5px 5px 50px;
+}
+
+html {
+  background-color: #ad8068;
+}
+h2,
+h1,
+h3,
+h4,
+h5 {
+  font-family: Alegreya, serif;
+}
+
+p {
+  font-family: "Cabin", Cabin, sans-serif;
+}
+
+footer {
+  background-color: var(--secondary-color);
+  margin: 10px 95px 0px 95px;
+  text-align: center;
+}
