@@ -96,8 +96,9 @@ main {
 
 #image2 {
   background-image: url(/bountifulFoods/images/promo/grapes.png);
-  grid-area: 5/1/8/4;
-  background-color: aqua;
+  grid-area: 5/3/8/6;
+  background-color: rgb(92, 9, 148);
+  background-size: cover;
 }
 
 #drinks {
@@ -119,6 +120,11 @@ main {
   padding: 10px;
   text-align: center;
   border: none;
+}
+
+.aboutUs #sec3 {
+  background-image: url("../images/promo/strawberryPromo.jpg");
+  background-color: var(--secondary-color);
 }
 
 #sec3 h2 {
