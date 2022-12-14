@@ -167,6 +167,14 @@ main {
   margin: 10px;
 }
 
+.freshWrapper p {
+  background-color: var(--secondary-color);
+}
+
+.freshWrapper fieldset {
+  background-color: var(--secondary-color);
+}
+
 html {
   background-image: url("../images/vineyard.png");
   background-size: cover;
