@@ -6,11 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Bountiful Foods</title>
     <link rel="stylesheet" href="styles/base.css" />
-    <link rel="stylesheet" href="styles/medium.css" />
-    <link rel="stylesheet" href="styles/large.css" />
+    <!-- <link rel="stylesheet" href="styles/medium.css" />
+    <link rel="stylesheet" href="styles/large.css" /> -->
     <link rel="stylesheet" href="styles/normalize.css" />
 
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.ico" />
+    <script src="scripts/map.js"></script>
   </head>
 
   <body>
@@ -39,25 +40,19 @@
         </div>
       </div>
     </header>
+    <!-- The About Us page provides historical information about the company 
+    and area plus contact information, and a Google Map and other relevant content. -->
     <main>
       <div class="aboutUs">
-        <section id="sec1">
-          <p>
-            The About Us page provides historical information about the company
-            and area plus contact information, and a Google Map and other
-            relevant content.
-          </p>
-        </section>
-
         <section id="sec3">
           <p>
-            Our fruit smoothie company is dedicated to providing delicious and
+            At Bountiful Foods, we're dedicated to providing delicious and
             healthy smoothies made with fresh, high-quality fruits and
             ingredients. We believe in the power of nature to nourish and
             energize the body, and our smoothies are a tasty and convenient way
             to incorporate more fruit into your diet.
           </p>
-
+          <div id="map"></div>
           <p>
             Whether you're looking for a refreshing breakfast treat, a
             post-workout pick-me-up, or just a tasty snack, we've got a smoothie
@@ -67,8 +62,8 @@
           </p>
         </section>
       </div>
-    </main>
 
-    <!-- <script src="index.js"></script> -->
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYp8qljvCPRQ9UbzjoCohDUBtQtMti7Ek&callback=myMap"></script>
+    </main>
   </body>
 </html>
