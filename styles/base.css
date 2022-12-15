@@ -145,6 +145,14 @@ main {
 #sec4 {
   grid-area: 5/6/8/9;
   margin: 5px 5px 5px 50px;
+  text-align: center;
+}
+
+#fruitBox {
+  background-color: var(--secondary-color);
+  max-height: 100%;
+  min-height: 150px;
+  border-radius: 5px;
 }
 
 .aboutUs #sec3 {
