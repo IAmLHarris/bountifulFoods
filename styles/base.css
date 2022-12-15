@@ -156,7 +156,7 @@ main {
 }
 
 #easterEgg {
-  color: #3f826d;
+  color: var(--accent2-color);
 }
 
 .aboutUs #sec3 {
