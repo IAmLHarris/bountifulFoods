@@ -219,7 +219,6 @@ main {
 .freshWrapper #sec4 {
   background-color: var(--accent2-color);
   padding: 5px;
-
   border: 5px solid var(--secondary-color);
   border-radius: 5px;
 }
