@@ -155,6 +155,10 @@ main {
   border-radius: 5px;
 }
 
+#easterEgg {
+  color: #3f826d;
+}
+
 .aboutUs #sec3 {
   display: grid;
 
@@ -207,12 +211,41 @@ main {
   padding: 5px;
 }
 
+.freshWrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+.freshWrapper #sec4 {
+  background-color: var(--accent2-color);
+  padding: 5px;
+
+  border: 5px solid var(--secondary-color);
+  border-radius: 5px;
+}
 .freshWrapper p {
   background-color: var(--secondary-color);
 }
 
 .freshWrapper fieldset {
   background-color: var(--secondary-color);
+}
+
+form {
+  display: block;
+}
+
+label {
+  font-family: "Cabin", Cabin, sans-serif;
+  border-radius: 5px;
+}
+
+fieldset {
+  display: block;
+  width: max-content;
+  max-width: 100px;
+  border: solid 5px #d64550;
+  border-radius: 15px;
 }
 
 html {
