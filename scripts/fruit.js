@@ -1,6 +1,8 @@
 const requestURL = "./scripts/fruit.json";
 const cards = document.querySelector(".fruitOptions");
 
+console.log("bingus");
+
 fetch(requestURL)
   .then(function (response) {
     return response.json();
@@ -69,4 +71,9 @@ function displayBuisinesses3(fruitList) {
 
   // Add/append the existing HTML div with the cards class with the section(card)
   document.querySelector("#fruitDrop3").appendChild(fruitn);
+}
+
+function poplol() {
+  preventDefault();
+  console.log("buttpoop");
 }

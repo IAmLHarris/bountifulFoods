@@ -1,6 +1,6 @@
-const myForm = document.getElementById("subBut");
+const myForm = document.getElementById("user_form");
 
-myForm.addEventListener("click", function (e) {
-  // e.preventDefault();
-  console.log("poopbutt");
+myForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  console.log("who cares");
 });
