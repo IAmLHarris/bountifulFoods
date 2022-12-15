@@ -42,6 +42,31 @@
     padding: 3px;
     max-width: 25px;
   }
+
+  #map {
+    grid-area: 2/2/3/3;
+  }
+
+  #contact {
+    align-self: center;
+    justify-self: center;
+    grid-area: 3/2/4/3;
+  }
+
+  /* #blurb1 {
+    grid-column: auto;
+  }
+
+  #blurb2 {
+    grid-column: span 2;
+  }
+  .contact {
+    grid-column: span 2;
+  }
+
+  .map {
+    display: none;
+  } */
   /*
   #sec1 {
     grid-column: 1 / 4;

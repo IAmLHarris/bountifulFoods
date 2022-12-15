@@ -148,6 +148,10 @@ main {
 }
 
 .aboutUs #sec3 {
+  display: grid;
+
+  grid-template-rows: auto auto auto;
+  grid-template-columns: auto auto;
   background-image: url("../images/promo/cut.png");
   background-size: cover;
   background-color: var(--secondary-color);
@@ -169,6 +173,30 @@ main {
   border: solid 5px var(--accent1-color);
   border-radius: 15px;
   margin: 10px;
+}
+
+#contact {
+  grid-area: 2/3/3/4;
+  max-width: 200px;
+  max-height: 200px;
+  background-color: var(--secondary-color);
+  padding: 15px;
+  border-radius: 5px;
+  margin: 20px;
+  align-self: center;
+}
+
+#blurb1 {
+  grid-column: span 3;
+}
+
+#blurb2 {
+  grid-column: span 3;
+}
+
+.aboutUs #contact p {
+  margin: 0px;
+  padding: 5px;
 }
 
 .freshWrapper p {

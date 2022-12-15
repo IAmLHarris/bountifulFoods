@@ -51,6 +51,14 @@
     padding: 3px;
     max-width: 25px;
   }
+
+  /* .aboutUs #sec3 {
+    
+  } */
+
+  #map {
+    max-width: 200px;
+  }
   /*
   #sec1 {
     grid-column: 1 / 4;
