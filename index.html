@@ -25,8 +25,8 @@
           /></a>
           <a href="index.html"><h1>Bountiful Foods</h1></a>
         </div>
-        <a href="fresh.html">Fresh!</a>
-        <a href="aboutUs.html">About Us</a>
+        <a id="siteDoor" href="fresh.html">Fresh!</a>
+        <a id="siteDoor" href="aboutUs.html">About Us</a>
 
         <div class="socialMedia">
           <a
@@ -112,13 +112,21 @@
             <h2>Your Order</h2>
 
             <div id="fruitBox"></div>
+            <button id="removeButton" onclick="droporder()" type="button">
+              Cancel Order
+            </button>
           </div>
         </section>
       </div>
     </main>
 
-    <footer><h5>Buisness yadda yadda</h5></footer>
+    <footer>
+      <p>Date Last Modified:</p>
+      <p id="mod"></p>
+    </footer>
+    <script src="scripts/mod.js"></script>
     <script src="scripts/weather.js"></script>
     <script src="scripts/lazyload.js"></script>
+    <script src="scripts/fruitbox.js"></script>
   </body>
 </html>

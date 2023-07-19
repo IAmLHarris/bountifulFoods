@@ -56,12 +56,12 @@
     </header>
     <main>
       <div class="freshWrapper">
-        
         <form name="user_form">
           <fieldset id="dumbForm">
             <label id="fname"
               >First Name* <input type="text" name="fname" checked
             /></label>
+
             <label id="email"
               >Email*
               <input
@@ -82,21 +82,34 @@
 
             <label id="fruitOptions">
               <select id="fruitDrop" name="fruitChoice1" checked>
-                <option value="ouch">Pick</option>
+                <option value="" disabled selected>Pick</option>
+                <option value="">None</option>
               </select>
 
               <select id="fruitDrop2" name="fruitChoice2" checked>
-                <option value="ouch">Your</option>
+                <option value="" disabled selected>Your</option>
+                <option value="">None</option>
               </select>
 
               <select id="fruitDrop3" name="fruitChoice3" checked>
-                <option value="ouch">Fruit!</option>
+                <option value="" disabled selected>Fruit!</option>
+                <option value="">None</option>
               </select>
             </label>
 
-            <label id="instru"><textarea type="text" name="instructions" rows="7" cols="14" placeholder="Tell us your special asks."></textarea>
+            <label id="instru">
+              <textarea
+                type="text"
+                name="instructions"
+                rows="7"
+                cols="14"
+                placeholder="Tell us your special asks."
+              ></textarea>
+            </label>
 
-            <button onclick="poplol()" type="button">Submit</button>
+            <button id="freshButton" onclick="setorder()" type="button">
+              Submit
+            </button>
           </fieldset>
         </form>
 
@@ -105,12 +118,20 @@
             <h2>Your Order</h2>
 
             <div id="fruitBox"></div>
+            <button id="removeButton" onclick="droporder()" type="button">
+              Cancel Order
+            </button>
           </div>
-          
         </section>
       </div>
     </main>
     <script src="scripts/fruit.js"></script>
-    <footer><h5>Buisness yadda yadda</h5></footer>
+    <script src="scripts/lazyload.js"></script>
+    <script src="scripts/fruitbox.js"></script>
+    <footer>
+      <p>Date Last Modified:</p>
+      <p id="mod"></p>
+    </footer>
+    <script src="scripts/mod.js"></script>
   </body>
 </html>

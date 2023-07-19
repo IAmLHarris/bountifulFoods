@@ -55,6 +55,11 @@
   #map {
     max-width: 200px;
   }
+
+  .freshWrapper {
+    align-items: center;
+    flex-direction: column;
+  }
   /*
   #sec1 {
     grid-column: 1 / 4;

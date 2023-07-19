@@ -19,7 +19,12 @@ header {
 
 header a {
   text-decoration: none;
+  padding-left: 5px;
 }
+
+/* #siteDoor {
+  background-color: var(--accent1-color);
+} */
 
 header h1 {
   color: var(--accent1-color);
@@ -40,9 +45,13 @@ header h1 {
   display: flex;
 }
 
+.socialMedia {
+  flex-direction: column;
+}
+
 .socialMedia img {
   padding: 3px;
-  max-width: 50px;
+  max-width: 25px;
 }
 .socialMedia a {
   text-decoration: none;
@@ -152,12 +161,17 @@ main {
 #fruitBox {
   background-color: var(--secondary-color);
   max-height: 100%;
-  min-height: 150px;
+  min-height: 200px;
   border-radius: 5px;
 }
 
-#easterEgg {
-  color: var(--accent2-color);
+#freshButton {
+  font-family: "Courier New", Courier, monospace;
+}
+
+#removeButton {
+  margin-top: 4px;
+  font-family: "Courier New", Courier, monospace;
 }
 
 .aboutUs #sec3 {
