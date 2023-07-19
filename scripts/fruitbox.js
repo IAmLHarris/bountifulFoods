@@ -10,6 +10,8 @@ let ord3 = document.createElement("p");
 ord3.textContent = localStorage.getItem("ord3");
 document.querySelector("#fruitBox").appendChild(ord3);
 
+const fruitbox = document.getElementById("fruitBox");
+
 function droporder() {
   localStorage.setItem("ord1", "");
   localStorage.setItem("ord2", "");
