@@ -22,6 +22,10 @@ let ord3 = document.createElement("h3");
 ord3.textContent = localStorage.getItem("ord3");
 document.querySelector("#fruitBox").appendChild(ord3);
 
+let date = document.createElement("p");
+date.textContent = localStorage.getItem("otime");
+document.querySelector("#fruitBox").appendChild(date);
+
 function droporder() {
   let fbox = document.getElementById("fruitBox");
 
@@ -32,6 +36,8 @@ function droporder() {
   localStorage.setItem("ord1", "");
   localStorage.setItem("ord2", "");
   localStorage.setItem("ord3", "");
+
+  localStorage.setItem("otime", "");
 
   while (fbox.hasChildNodes()) {
     fbox.removeChild(fbox.firstChild);

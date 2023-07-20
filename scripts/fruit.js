@@ -94,6 +94,8 @@ function setorder() {
   localStorage.setItem("ord2", "");
   localStorage.setItem("ord3", "");
 
+  localStorage.setItem("otime", "");
+
   while (fruitbox.hasChildNodes()) {
     fruitbox.removeChild(fruitbox.firstChild);
   }
@@ -111,6 +113,14 @@ function setorder() {
   var value3 = f3.value;
   // var text3 = f3.options[f3.selectedIndex].text;
 
+  let now = new Date();
+  let otime = new Intl.DateTimeFormat("en-US", {
+    dateStyle: "short",
+    timeStyle: "long",
+    timeZone: "America/Los_Angeles",
+  }).format(now);
+  // otime.toLocaleString("en-GB", { timeZone: "UTC" });
+
   localStorage.setItem("fname", fname);
   localStorage.setItem("email", email);
   localStorage.setItem("pnumb", pnumb);
@@ -119,9 +129,7 @@ function setorder() {
   localStorage.setItem("ord2", value2);
   localStorage.setItem("ord3", value3);
 
-  console.log(fname);
-  console.log(email);
-  console.log(pnumb);
+  localStorage.setItem("otime", otime);
 
   // console.log(value1);
   // console.log(text1);
@@ -155,4 +163,8 @@ function setorder() {
   let ord3 = document.createElement("h3");
   ord3.textContent = localStorage.getItem("ord3");
   document.querySelector("#fruitBox").appendChild(ord3);
+
+  let date = document.createElement("p");
+  date.textContent = localStorage.getItem("otime");
+  document.querySelector("#fruitBox").appendChild(date);
 }
