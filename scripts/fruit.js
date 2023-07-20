@@ -9,12 +9,12 @@ fetch(requestURL)
   .then(function (jsonObject) {
     const fruitListFull = jsonObject;
     // console.table(jsonObject);
-    fruitListFull.forEach(displayBuisinesses);
-    fruitListFull.forEach(displayBuisinesses2);
-    fruitListFull.forEach(displayBuisinesses3);
+    fruitListFull.forEach(displayFruit);
+    fruitListFull.forEach(displayFruit2);
+    fruitListFull.forEach(displayFruit3);
   });
 
-function displayBuisinesses(fruitList) {
+function displayFruit(fruitList) {
   // Create elements to add to the document
 
   // let selection = document.createElement("select");
@@ -35,7 +35,7 @@ function displayBuisinesses(fruitList) {
   document.querySelector("#fruitDrop").appendChild(fruitn);
 }
 
-function displayBuisinesses2(fruitList) {
+function displayFruit2(fruitList) {
   // Create elements to add to the document
 
   // let selection = document.createElement("select");
@@ -55,7 +55,7 @@ function displayBuisinesses2(fruitList) {
   document.querySelector("#fruitDrop2").appendChild(fruitn);
 }
 
-function displayBuisinesses3(fruitList) {
+function displayFruit3(fruitList) {
   // Create elements to add to the document
 
   // let selection = document.createElement("select");
@@ -75,13 +75,21 @@ function displayBuisinesses3(fruitList) {
   document.querySelector("#fruitDrop3").appendChild(fruitn);
 }
 
-const f1 = document.getElementById("fruitDrop");
-const f2 = document.getElementById("fruitDrop2");
-const f3 = document.getElementById("fruitDrop3");
-
 const fruitbox = document.getElementById("fruitBox");
 
 function setorder() {
+  let fname = document.getElementById("fnamel");
+  let email = document.getElementById("emaill");
+  let pnumb = document.getElementById("pnumbl");
+
+  let f1 = document.getElementById("fruitDrop");
+  let f2 = document.getElementById("fruitDrop2");
+  let f3 = document.getElementById("fruitDrop3");
+
+  localStorage.setItem("fname", "");
+  localStorage.setItem("email", "");
+  localStorage.setItem("pnumb", "");
+
   localStorage.setItem("ord1", "");
   localStorage.setItem("ord2", "");
   localStorage.setItem("ord3", "");
@@ -89,6 +97,10 @@ function setorder() {
   while (fruitbox.hasChildNodes()) {
     fruitbox.removeChild(fruitbox.firstChild);
   }
+
+  fname = fname.value;
+  email = email.value;
+  pnumb = pnumb.value;
 
   var value1 = f1.value;
   // var text1 = f1.options[f1.selectedIndex].text;
@@ -99,11 +111,17 @@ function setorder() {
   var value3 = f3.value;
   // var text3 = f3.options[f3.selectedIndex].text;
 
+  localStorage.setItem("fname", fname);
+  localStorage.setItem("email", email);
+  localStorage.setItem("pnumb", pnumb);
+
   localStorage.setItem("ord1", value1);
-
   localStorage.setItem("ord2", value2);
-
   localStorage.setItem("ord3", value3);
+
+  console.log(fname);
+  console.log(email);
+  console.log(pnumb);
 
   // console.log(value1);
   // console.log(text1);
@@ -114,15 +132,27 @@ function setorder() {
   // console.log(value3);
   // console.log(text3);
 
-  let ord1 = document.createElement("p");
+  let name = document.createElement("p");
+  name.textContent = localStorage.getItem("fname");
+  document.querySelector("#fruitBox").appendChild(name);
+
+  let mail = document.createElement("p");
+  mail.textContent = localStorage.getItem("email");
+  document.querySelector("#fruitBox").appendChild(mail);
+
+  let number = document.createElement("p");
+  number.textContent = localStorage.getItem("pnumb");
+  document.querySelector("#fruitBox").appendChild(number);
+
+  let ord1 = document.createElement("h3");
   ord1.textContent = localStorage.getItem("ord1");
   document.querySelector("#fruitBox").appendChild(ord1);
 
-  let ord2 = document.createElement("p");
+  let ord2 = document.createElement("h3");
   ord2.textContent = localStorage.getItem("ord2");
   document.querySelector("#fruitBox").appendChild(ord2);
 
-  let ord3 = document.createElement("p");
+  let ord3 = document.createElement("h3");
   ord3.textContent = localStorage.getItem("ord3");
   document.querySelector("#fruitBox").appendChild(ord3);
 }
